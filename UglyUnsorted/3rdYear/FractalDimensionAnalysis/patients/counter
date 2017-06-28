@@ -1,0 +1,15 @@
+#!/bin/bash
+
+matching_regex="+([0-9])_red"
+counter=1
+
+for file in cancer/short/*
+do
+	if [[ $file == "cancer/short/$matching_regex" ]]; then
+		cp $file "/home/falcon/Workspace/Coursework/temp/"
+		counter=couter+1
+	fi
+done
+
+echo "$counter"
+

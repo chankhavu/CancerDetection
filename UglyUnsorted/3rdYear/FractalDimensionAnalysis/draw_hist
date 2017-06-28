@@ -1,0 +1,19 @@
+#!/bin/bash
+
+folders=(
+	"patients/cancer"
+	"patients/control"
+	"patients/FAM"
+	"patients/FAM_NEW"
+)
+
+
+function process(){
+	base_dir=$1	
+	regex_red=$2
+	regex_green=$3
+	regex_blue=$4
+	regex_gray=$5
+
+	
+}

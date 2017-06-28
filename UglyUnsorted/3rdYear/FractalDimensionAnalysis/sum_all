@@ -1,0 +1,101 @@
+#!/bin/bash
+
+patient_dir='patients/FAM_NEW/'
+
+# preparing directories
+patient_dir="${patient_dir%%/}"
+
+function avg_result() {
+	local matching_regex=$1
+	local codename=$2
+	local data_dir=$3
+	local result_dir=$4
+
+	rm "$result_dir/$codename" &> /dev/null
+	echo "- summarizing $data_dir with regex $matching_regex"
+
+	file_matching="$data_dir/$matching_regex"
+	for file in $data_dir/*
+	do
+		if [[ $file == $file_matching ]]
+		then
+			result_index=$(basename $file)
+			result_index=${result_index%.*}
+
+			res="$(./bin/calc_avg "$file")";
+			echo "$res" >> "$result_dir/$codename"
+		fi
+	done
+
+	avg="$(./bin/calc_avg "$result_dir/$codename")"
+	echo "" >> "$result_dir/$codename"
+	echo -e "$(./bin/calc_bound "$result_dir/$codename")" >> "$result_dir/$codename"
+	echo "average: $avg" >> "$result_dir/$codename"
+
+	return 0
+}
+
+function calc_dispertion() {
+	local color_1=$1
+	local color_2=$2
+	local data_dir=$3
+
+	echo "- calculating dispertions for colors $color_1 and $color_2"
+
+	for file in $data_dir/short/*
+	do
+		matching_regex="$data_dir/short/+([0-9])_${color_1}"
+		if [[ $file == $matching_regex ]]; then
+			patient_num=$(basename "${file%_${color_1}}")
+			file_prefix="${file%_${color_1}}"
+			res="$(./bin/calc_disp "${file_prefix}_$color_1" "${file_prefix}_$color_2" 2>/dev/null)"		
+			echo -e "$res" > "$data_dir/dispertion/${patient_num}_${color_1}_${color_2}"			
+		fi
+	done
+}
+
+rm "$patient_dir/average*" &> /dev/null
+rm -r "$patient_dir/dispertion" &> /dev/null
+
+# processing averages 
+avg_result "+([0-9])_red"		"avg_value_red"		$patient_dir/short	$patient_dir
+avg_result "+([0-9])_green"		"avg_value_green"	$patient_dir/short	$patient_dir
+avg_result "+([0-9])_blue"		"avg_value_blue"	$patient_dir/short	$patient_dir
+avg_result "+([0-9])_gray"		"avg_value_gray"	$patient_dir/short	$patient_dir
+
+avg_result "+([0-9])_red_yellow"		"avg_value_yred"		$patient_dir/short	$patient_dir
+avg_result "+([0-9])_green_yellow"		"avg_value_ygreen"	$patient_dir/short	$patient_dir
+avg_result "+([0-9])_blue_yellow"		"avg_value_yblue"	$patient_dir/short	$patient_dir
+avg_result "+([0-9])_gray_yellow"		"avg_value_ygray"	$patient_dir/short	$patient_dir
+
+avg_result "+([0-9])_red_purple"		"avg_value_pred"		$patient_dir/short	$patient_dir
+avg_result "+([0-9])_green_purple"		"avg_value_pgreen"	$patient_dir/short	$patient_dir
+avg_result "+([0-9])_blue_purple"		"avg_value_pblue"	$patient_dir/short	$patient_dir
+avg_result "+([0-9])_gray_purple"		"avg_value_pgray"	$patient_dir/short	$patient_dir
+
+echo ""
+if [ ! -d "$patient_dir/dispertion/" ]; then
+	mkdir -p "$patient_dir/dispertion"
+fi
+
+calc_dispertion "red" "blue" $patient_dir
+avg_result "+([0-9])_red_blue" "avg_dispertion_red_blue" $patient_dir/dispertion $patient_dir
+calc_dispertion "red" "green" $patient_dir
+avg_result "+([0-9])_red_green"	"avg_dispertion_red_green" $patient_dir/dispertion $patient_dir
+calc_dispertion "blue" "green" $patient_dir
+avg_result "+([0-9])_blue_green" "avg_dispertion_blue_green" $patient_dir/dispertion $patient_dir
+
+calc_dispertion "red_yellow" "blue_yellow" $patient_dir
+avg_result "+([0-9])_red_yellow_blue_yellow" "avg_dispertion_y_red_blue" $patient_dir/dispertion $patient_dir
+calc_dispertion "red_yellow" "green_yellow" $patient_dir
+avg_result "+([0-9])_red_yellow_green_yellow" "avg_dispertion_y_red_green" $patient_dir/dispertion $patient_dir
+calc_dispertion "blue_yellow" "green_yellow" $patient_dir
+avg_result "+([0-9])_blue_yellow_green_yellow" "avg_dispertion_y_blue_green" $patient_dir/dispertion $patient_dir
+
+calc_dispertion "red_purple" "blue_purple" $patient_dir
+avg_result "+([0-9])_red_purple_blue_purple" "avg_dispertion_p_red_blue" $patient_dir/dispertion $patient_dir
+calc_dispertion "red_purple" "green_purple" $patient_dir
+avg_result "+([0-9])_red_purple_green_purple" "avg_dispertion_p_red_green" $patient_dir/dispertion $patient_dir
+calc_dispertion "blue_purple" "green_purple" $patient_dir
+avg_result "+([0-9])_blue_purple_green_purple" "avg_dispertion_p_blue_green" $patient_dir/dispertion $patient_dir
+

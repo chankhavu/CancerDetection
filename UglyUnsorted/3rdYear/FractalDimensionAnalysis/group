@@ -1,0 +1,43 @@
+#!/bin/bash
+
+data_dir="patients/control/dispertion"
+
+#processing
+data_dir=${data_dir%%/}
+mkdir "$data_dir/group" &> /dev/null
+
+match_regex="$data_dir/+([0-9])_red_blue"
+for file in $data_dir/*
+do
+	if [[ $file == $match_regex ]]; then
+		prefix=${file%_red_blue}
+		num=$(basename $prefix)
+
+		echo -e "$(./bin/group_files ${prefix}_red_blue ${prefix}_red_green ${prefix}_blue_green 9)" > "$data_dir/group/${num}"		
+	fi
+done
+
+match_regex="$data_dir/+([0-9])_red_yellow_blue_yellow"
+for file in $data_dir/*
+do
+	if [[ $file == $match_regex ]]; then
+		prefix=${file%_red_yellow_blue_yellow}
+		num=$(basename $prefix)
+
+		echo -e "$(./bin/group_files ${prefix}_red_yellow_blue_yellow ${prefix}_red_yellow_green_yellow ${prefix}_blue_yellow_green_yellow 9)" > "$data_dir/group/${num}y"		
+	fi
+done
+
+match_regex="$data_dir/+([0-9])_red_purple_blue_purple"
+for file in $data_dir/*
+do
+	if [[ $file == $match_regex ]]; then
+		prefix=${file%_red_purple_blue_purple}
+		num=$(basename $prefix)
+
+		echo -e "$(./bin/group_files ${prefix}_red_purple_blue_purple ${prefix}_red_purple_green_purple ${prefix}_blue_purple_green_purple 9)" > "$data_dir/group/${num}p"		
+	fi
+done
+
+
+

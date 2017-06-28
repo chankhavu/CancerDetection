@@ -1,0 +1,110 @@
+
+----- Ratio = 5-10, K = 12 -----
+1.  cancer result: 33 out of 35
+1.  control result: 9 out of 15
+2.  cancer result: 28 out of 35
+2.  control result: 10 out of 15
+3.  cancer result: 31 out of 35
+3.  control result: 9 out of 15
+4.  cancer result: 32 out of 35
+4.  control result: 8 out of 15
+5.  cancer result: 30 out of 35
+5.  control result: 10 out of 15
+6.  cancer result: 28 out of 35
+6.  control result: 9 out of 15
+7.  cancer result: 31 out of 35
+7.  control result: 9 out of 15
+8.  cancer result: 31 out of 35
+8.  control result: 10 out of 15
+9.  cancer result: 29 out of 35
+9.  control result: 10 out of 15
+10.  cancer result: 26 out of 35
+10.  control result: 11 out of 15
+
+----- Ratio = 6-10, K = 12 -----
+1.  cancer result: 22 out of 28
+1.  control result: 9 out of 12
+2.  cancer result: 19 out of 28
+2.  control result: 10 out of 12
+3.  cancer result: 25 out of 28
+3.  control result: 8 out of 12
+4.  cancer result: 20 out of 28
+4.  control result: 9 out of 12
+5.  cancer result: 22 out of 28
+5.  control result: 9 out of 12
+6.  cancer result: 26 out of 28
+6.  control result: 6 out of 12
+7.  cancer result: 26 out of 28
+7.  control result: 7 out of 12
+8.  cancer result: 25 out of 28
+8.  control result: 9 out of 12
+9.  cancer result: 25 out of 28
+9.  control result: 7 out of 12
+10.  cancer result: 26 out of 28
+10.  control result: 8 out of 12
+
+----- Ratio = 7-10, K = 12 -----
+1.  cancer result: 17 out of 21
+1.  control result: 5 out of 9
+2.  cancer result: 20 out of 21
+2.  control result: 5 out of 9
+3.  cancer result: 18 out of 21
+3.  control result: 8 out of 9
+4.  cancer result: 19 out of 21
+4.  control result: 8 out of 9
+5.  cancer result: 21 out of 21
+5.  control result: 8 out of 9
+6.  cancer result: 18 out of 21
+6.  control result: 4 out of 9
+7.  cancer result: 19 out of 21
+7.  control result: 6 out of 9
+8.  cancer result: 18 out of 21
+8.  control result: 7 out of 9
+9.  cancer result: 19 out of 21
+9.  control result: 5 out of 9
+10.  cancer result: 20 out of 21
+10.  control result: 6 out of 9
+
+----- Ratio = 8-10, K = 12 -----
+1.  cancer result: 14 out of 14
+1.  control result: 5 out of 6
+2.  cancer result: 12 out of 14
+2.  control result: 3 out of 6
+3.  cancer result: 12 out of 14
+3.  control result: 5 out of 6
+4.  cancer result: 14 out of 14
+4.  control result: 4 out of 6
+5.  cancer result: 14 out of 14
+5.  control result: 5 out of 6
+6.  cancer result: 14 out of 14
+6.  control result: 5 out of 6
+7.  cancer result: 12 out of 14
+7.  control result: 4 out of 6
+8.  cancer result: 14 out of 14
+8.  control result: 5 out of 6
+9.  cancer result: 12 out of 14
+9.  control result: 3 out of 6
+10.  cancer result: 13 out of 14
+10.  control result: 3 out of 6
+
+----- Ratio = 9-10, K = 12 -----
+1.  cancer result: 6 out of 7
+1.  control result: 2 out of 3
+2.  cancer result: 7 out of 7
+2.  control result: 2 out of 3
+3.  cancer result: 6 out of 7
+3.  control result: 1 out of 3
+4.  cancer result: 7 out of 7
+4.  control result: 2 out of 3
+5.  cancer result: 4 out of 7
+5.  control result: 2 out of 3
+6.  cancer result: 5 out of 7
+6.  control result: 2 out of 3
+7.  cancer result: 6 out of 7
+7.  control result: 3 out of 3
+8.  cancer result: 6 out of 7
+8.  control result: 2 out of 3
+9.  cancer result: 6 out of 7
+9.  control result: 2 out of 3
+10.  cancer result: 6 out of 7
+10.  control result: 2 out of 3

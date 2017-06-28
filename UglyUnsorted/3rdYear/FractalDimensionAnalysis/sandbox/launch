@@ -1,0 +1,97 @@
+#!/bin/bash
+
+archive_dir='rars/'
+target_dir='patients/cancer/'
+temp_dir='.temp/'
+
+# preparing result directory
+archive_dir="${archive_dir%%/}"
+target_dir="${target_dir%%/}"
+temp_dir="${temp_dir%%/}"
+
+if [ -d "$target_dir/" ]; then
+	rm -r $target_dir 
+fi
+mkdir $target_dir
+
+if [ ! -d "$target_dir/short/" ]; then
+	mkdir -p "$target_dir/short/"
+fi
+
+if [ ! -d "$target_dir/full/" ]; then
+	mkdir -p "$target_dir/full"
+fi
+
+function process() {
+	local matching_regex=$1
+	local codename=$2
+	local data_dir=$3
+
+	echo "- processing files matching $matching_regex"
+
+	result_name=$(basename $rar_archive)
+	result_name=${result_name%.*}		
+
+	file_matching="$data_dir/$matching_regex"
+	for file in $data_dir/*	
+	do
+		if [[ $file == $file_matching ]]
+		then
+			res="$(./a.out "$file" 2>/dev/null)"
+			echo $res >> "$target_dir/short/${result_name}_$codename"
+			echo "$file: $res" >> "$target_dir/full/${result_name}_$codename"
+		fi
+	done
+
+	return 0
+}
+
+archive_matching="$archive_dir/*rar"
+for rar_archive in $archive_matching
+do
+	rm -r "$temp_dir/" > /dev/null 
+	echo "unpacking ${rar_archive}..."
+	unrar x "$rar_archive" "$temp_dir/" > /dev/null
+
+	# generating additional files
+	for file in $temp_dir/*
+	do
+		matching_regex="$temp_dir/+([0-9])_+([0-9])_Red.txt"
+		if [[ $file == $matching_regex ]]; then
+			./generator $file ${file/Red/Green} ${file/Red/"Red_&_Green"} 1> /dev/null
+			./generator $file ${file/Red/Blue} ${file/Red/"Red_&_Blue"} 1> /dev/null 
+		fi
+
+		matching_regex="$temp_dir/+([0-9])_+([0-9])_Green.txt"
+		if [[ $file == $matching_regex ]]; then
+			./generator $file ${file/Green/Blue} ${file/Green/"Green_&_Blue"} 1> /dev/null
+		fi
+	done
+
+	# processing ...
+	process "+([0-9])_+([0-9])_Red.txt"		"red"	$temp_dir
+	process "+([0-9])_+([0-9])_Green.txt"	"green"	$temp_dir
+	process "+([0-9])_+([0-9])_Blue.txt"	"blue"	$temp_dir
+	process "+([0-9])_+([0-9])_Gray.txt"	"gray"	$temp_dir
+
+	process "+([0-9])_+([0-9])_Red_&_Green.txt"		"red_&_green"	$temp_dir
+	process "+([0-9])_+([0-9])_Green_&_Blue.txt"	"green_&_blue"	$temp_dir
+	process "+([0-9])_+([0-9])_Red_&_Blue.txt"		"red_&_blue"	$temp_dir
+
+	process "+([0-9])y_+([0-9])_Red.txt"	"red_purple"	$temp_dir
+	process "+([0-9])y_+([0-9])_Green.txt"	"green_purple"	$temp_dir
+	process "+([0-9])y_+([0-9])_Blue.txt"	"blue_purple"	$temp_dir
+	process "+([0-9])y_+([0-9])_Gray.txt"	"gray_purple"	$temp_dir
+
+	process "+([0-9])p_+([0-9])_Red.txt"	"red_yellow"	$temp_dir
+	process "+([0-9])p_+([0-9])_Green.txt"	"green_yellow"	$temp_dir
+	process "+([0-9])p_+([0-9])_Blue.txt"	"blue_yellow"	$temp_dir
+	process "+([0-9])p_+([0-9])_Gray.txt"	"gray_yellow"	$temp_dir
+
+done
+
+# clear the trash
+rm -r $temp_dir
+
+
+

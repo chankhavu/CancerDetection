@@ -1,0 +1,669 @@
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	1.bmp
+Scans total:	2
+  Scan #1:	1_1.bmp
+  Position:	527	443
+  Size:		160	160
+  Scan #2:	1_2.bmp
+  Position:	657	624
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	1y.bmp
+Scans total:	2
+  Scan #1:	1y_1.bmp
+  Position:	527	443
+  Size:		160	160
+  Scan #2:	1y_2.bmp
+  Position:	657	624
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	1p.bmp
+Scans total:	2
+  Scan #1:	1p_1.bmp
+  Position:	527	443
+  Size:		160	160
+  Scan #2:	1p_2.bmp
+  Position:	657	624
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	1.bmp
+Scans total:	4
+  Scan #1:	1_1.bmp
+  Position:	513	436
+  Size:		160	160
+  Scan #2:	1_2.bmp
+  Position:	656	635
+  Size:		160	160
+  Scan #3:	1_3.bmp
+  Position:	798	834
+  Size:		160	160
+  Scan #4:	1_4.bmp
+  Position:	998	786
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	1y.bmp
+Scans total:	4
+  Scan #1:	1y_1.bmp
+  Position:	513	436
+  Size:		160	160
+  Scan #2:	1y_2.bmp
+  Position:	656	635
+  Size:		160	160
+  Scan #3:	1y_3.bmp
+  Position:	798	834
+  Size:		160	160
+  Scan #4:	1y_4.bmp
+  Position:	998	786
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	1p.bmp
+Scans total:	4
+  Scan #1:	1p_1.bmp
+  Position:	513	436
+  Size:		160	160
+  Scan #2:	1p_2.bmp
+  Position:	656	635
+  Size:		160	160
+  Scan #3:	1p_3.bmp
+  Position:	798	834
+  Size:		160	160
+  Scan #4:	1p_4.bmp
+  Position:	998	786
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	2.bmp
+Scans total:	3
+  Scan #1:	2_1.bmp
+  Position:	321	768
+  Size:		160	160
+  Scan #2:	2_2.bmp
+  Position:	1051	646
+  Size:		160	160
+  Scan #3:	2_3.bmp
+  Position:	741	112
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	2y.bmp
+Scans total:	3
+  Scan #1:	2y_1.bmp
+  Position:	321	768
+  Size:		160	160
+  Scan #2:	2y_2.bmp
+  Position:	1051	646
+  Size:		160	160
+  Scan #3:	2y_3.bmp
+  Position:	741	112
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	2p.bmp
+Scans total:	3
+  Scan #1:	2p_1.bmp
+  Position:	321	768
+  Size:		160	160
+  Scan #2:	2p_2.bmp
+  Position:	1051	646
+  Size:		160	160
+  Scan #3:	2p_3.bmp
+  Position:	741	112
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	3.bmp
+Scans total:	3
+  Scan #1:	3_1.bmp
+  Position:	514	319
+  Size:		160	160
+  Scan #2:	3_2.bmp
+  Position:	680	537
+  Size:		160	160
+  Scan #3:	3_3.bmp
+  Position:	849	472
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	3y.bmp
+Scans total:	3
+  Scan #1:	3y_1.bmp
+  Position:	514	319
+  Size:		160	160
+  Scan #2:	3y_2.bmp
+  Position:	680	537
+  Size:		160	160
+  Scan #3:	3y_3.bmp
+  Position:	849	472
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	3p.bmp
+Scans total:	3
+  Scan #1:	3p_1.bmp
+  Position:	514	319
+  Size:		160	160
+  Scan #2:	3p_2.bmp
+  Position:	680	537
+  Size:		160	160
+  Scan #3:	3p_3.bmp
+  Position:	849	472
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	4.bmp
+Scans total:	2
+  Scan #1:	4_1.bmp
+  Position:	431	439
+  Size:		160	160
+  Scan #2:	4_2.bmp
+  Position:	1004	950
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	4y.bmp
+Scans total:	2
+  Scan #1:	4y_1.bmp
+  Position:	431	439
+  Size:		160	160
+  Scan #2:	4y_2.bmp
+  Position:	1004	950
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	4p.bmp
+Scans total:	2
+  Scan #1:	4p_1.bmp
+  Position:	431	439
+  Size:		160	160
+  Scan #2:	4p_2.bmp
+  Position:	1004	950
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	5.bmp
+Scans total:	2
+  Scan #1:	5_1.bmp
+  Position:	524	991
+  Size:		160	160
+  Scan #2:	5_2.bmp
+  Position:	1334	154
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	5y.bmp
+Scans total:	2
+  Scan #1:	5y_1.bmp
+  Position:	524	991
+  Size:		160	160
+  Scan #2:	5y_2.bmp
+  Position:	1334	154
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	5p.bmp
+Scans total:	2
+  Scan #1:	5p_1.bmp
+  Position:	524	991
+  Size:		160	160
+  Scan #2:	5p_2.bmp
+  Position:	1334	154
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	6.bmp
+Scans total:	3
+  Scan #1:	6_1.bmp
+  Position:	251	334
+  Size:		160	160
+  Scan #2:	6_2.bmp
+  Position:	384	1007
+  Size:		160	160
+  Scan #3:	6_3.bmp
+  Position:	1401	839
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	6y.bmp
+Scans total:	3
+  Scan #1:	6y_1.bmp
+  Position:	251	334
+  Size:		160	160
+  Scan #2:	6y_2.bmp
+  Position:	384	1007
+  Size:		160	160
+  Scan #3:	6y_3.bmp
+  Position:	1401	839
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	6p.bmp
+Scans total:	3
+  Scan #1:	6p_1.bmp
+  Position:	251	334
+  Size:		160	160
+  Scan #2:	6p_2.bmp
+  Position:	384	1007
+  Size:		160	160
+  Scan #3:	6p_3.bmp
+  Position:	1401	839
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	7.bmp
+Scans total:	2
+  Scan #1:	7_1.bmp
+  Position:	402	370
+  Size:		160	160
+  Scan #2:	7_2.bmp
+  Position:	840	386
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	7y.bmp
+Scans total:	2
+  Scan #1:	7y_1.bmp
+  Position:	402	370
+  Size:		160	160
+  Scan #2:	7y_2.bmp
+  Position:	840	386
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	7p.bmp
+Scans total:	2
+  Scan #1:	7p_1.bmp
+  Position:	402	370
+  Size:		160	160
+  Scan #2:	7p_2.bmp
+  Position:	840	386
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	8.bmp
+Scans total:	3
+  Scan #1:	8_1.bmp
+  Position:	135	268
+  Size:		160	160
+  Scan #2:	8_2.bmp
+  Position:	840	678
+  Size:		160	160
+  Scan #3:	8_3.bmp
+  Position:	1140	305
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	8y.bmp
+Scans total:	3
+  Scan #1:	8y_1.bmp
+  Position:	135	268
+  Size:		160	160
+  Scan #2:	8y_2.bmp
+  Position:	840	678
+  Size:		160	160
+  Scan #3:	8y_3.bmp
+  Position:	1140	305
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	8p.bmp
+Scans total:	3
+  Scan #1:	8p_1.bmp
+  Position:	135	268
+  Size:		160	160
+  Scan #2:	8p_2.bmp
+  Position:	840	678
+  Size:		160	160
+  Scan #3:	8p_3.bmp
+  Position:	1140	305
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	9.bmp
+Scans total:	3
+  Scan #1:	9_1.bmp
+  Position:	81	489
+  Size:		160	160
+  Scan #2:	9_2.bmp
+  Position:	612	576
+  Size:		160	160
+  Scan #3:	9_3.bmp
+  Position:	878	915
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	9y.bmp
+Scans total:	3
+  Scan #1:	9y_1.bmp
+  Position:	81	489
+  Size:		160	160
+  Scan #2:	9y_2.bmp
+  Position:	612	576
+  Size:		160	160
+  Scan #3:	9y_3.bmp
+  Position:	878	915
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	9p.bmp
+Scans total:	3
+  Scan #1:	9p_1.bmp
+  Position:	81	489
+  Size:		160	160
+  Scan #2:	9p_2.bmp
+  Position:	612	576
+  Size:		160	160
+  Scan #3:	9p_3.bmp
+  Position:	878	915
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	10.bmp
+Scans total:	6
+  Scan #1:	10_1.bmp
+  Position:	464	285
+  Size:		160	160
+  Scan #2:	10_2.bmp
+  Position:	19	43
+  Size:		160	160
+  Scan #3:	10_3.bmp
+  Position:	318	680
+  Size:		160	160
+  Scan #4:	10_4.bmp
+  Position:	534	552
+  Size:		160	160
+  Scan #5:	10_5.bmp
+  Position:	1381	422
+  Size:		160	160
+  Scan #6:	10_6.bmp
+  Position:	1256	93
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	10y.bmp
+Scans total:	6
+  Scan #1:	10y_1.bmp
+  Position:	464	285
+  Size:		160	160
+  Scan #2:	10y_2.bmp
+  Position:	19	43
+  Size:		160	160
+  Scan #3:	10y_3.bmp
+  Position:	318	680
+  Size:		160	160
+  Scan #4:	10y_4.bmp
+  Position:	534	552
+  Size:		160	160
+  Scan #5:	10y_5.bmp
+  Position:	1381	422
+  Size:		160	160
+  Scan #6:	10y_6.bmp
+  Position:	1256	93
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	10p.bmp
+Scans total:	6
+  Scan #1:	10p_1.bmp
+  Position:	464	285
+  Size:		160	160
+  Scan #2:	10p_2.bmp
+  Position:	19	43
+  Size:		160	160
+  Scan #3:	10p_3.bmp
+  Position:	318	680
+  Size:		160	160
+  Scan #4:	10p_4.bmp
+  Position:	534	552
+  Size:		160	160
+  Scan #5:	10p_5.bmp
+  Position:	1381	422
+  Size:		160	160
+  Scan #6:	10p_6.bmp
+  Position:	1256	93
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	11.bmp
+Scans total:	6
+  Scan #1:	11_1.bmp
+  Position:	28	588
+  Size:		160	160
+  Scan #2:	11_2.bmp
+  Position:	407	776
+  Size:		160	160
+  Scan #3:	11_3.bmp
+  Position:	797	982
+  Size:		160	160
+  Scan #4:	11_4.bmp
+  Position:	1201	850
+  Size:		160	160
+  Scan #5:	11_5.bmp
+  Position:	1281	74
+  Size:		160	160
+  Scan #6:	11_6.bmp
+  Position:	715	537
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	11y.bmp
+Scans total:	6
+  Scan #1:	11y_1.bmp
+  Position:	28	588
+  Size:		160	160
+  Scan #2:	11y_2.bmp
+  Position:	407	776
+  Size:		160	160
+  Scan #3:	11y_3.bmp
+  Position:	797	982
+  Size:		160	160
+  Scan #4:	11y_4.bmp
+  Position:	1201	850
+  Size:		160	160
+  Scan #5:	11y_5.bmp
+  Position:	1281	74
+  Size:		160	160
+  Scan #6:	11y_6.bmp
+  Position:	715	537
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	11p.bmp
+Scans total:	6
+  Scan #1:	11p_1.bmp
+  Position:	28	588
+  Size:		160	160
+  Scan #2:	11p_2.bmp
+  Position:	407	776
+  Size:		160	160
+  Scan #3:	11p_3.bmp
+  Position:	797	982
+  Size:		160	160
+  Scan #4:	11p_4.bmp
+  Position:	1201	850
+  Size:		160	160
+  Scan #5:	11p_5.bmp
+  Position:	1281	74
+  Size:		160	160
+  Scan #6:	11p_6.bmp
+  Position:	715	537
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	12.bmp
+Scans total:	3
+  Scan #1:	12_1.bmp
+  Position:	976	579
+  Size:		160	160
+  Scan #2:	12_2.bmp
+  Position:	494	975
+  Size:		160	160
+  Scan #3:	12_3.bmp
+  Position:	167	617
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	12y.bmp
+Scans total:	3
+  Scan #1:	12y_1.bmp
+  Position:	976	579
+  Size:		160	160
+  Scan #2:	12y_2.bmp
+  Position:	494	975
+  Size:		160	160
+  Scan #3:	12y_3.bmp
+  Position:	167	617
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	12p.bmp
+Scans total:	3
+  Scan #1:	12p_1.bmp
+  Position:	976	579
+  Size:		160	160
+  Scan #2:	12p_2.bmp
+  Position:	494	975
+  Size:		160	160
+  Scan #3:	12p_3.bmp
+  Position:	167	617
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	13.bmp
+Scans total:	2
+  Scan #1:	13_1.bmp
+  Position:	425	233
+  Size:		160	160
+  Scan #2:	13_2.bmp
+  Position:	213	652
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	13y.bmp
+Scans total:	2
+  Scan #1:	13y_1.bmp
+  Position:	425	233
+  Size:		160	160
+  Scan #2:	13y_2.bmp
+  Position:	213	652
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	13p.bmp
+Scans total:	2
+  Scan #1:	13p_1.bmp
+  Position:	425	233
+  Size:		160	160
+  Scan #2:	13p_2.bmp
+  Position:	213	652
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	14.bmp
+Scans total:	3
+  Scan #1:	14_1.bmp
+  Position:	166	623
+  Size:		160	160
+  Scan #2:	14_2.bmp
+  Position:	118	998
+  Size:		160	160
+  Scan #3:	14_3.bmp
+  Position:	1161	809
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	14y.bmp
+Scans total:	3
+  Scan #1:	14y_1.bmp
+  Position:	166	623
+  Size:		160	160
+  Scan #2:	14y_2.bmp
+  Position:	118	998
+  Size:		160	160
+  Scan #3:	14y_3.bmp
+  Position:	1161	809
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	14p.bmp
+Scans total:	3
+  Scan #1:	14p_1.bmp
+  Position:	166	623
+  Size:		160	160
+  Scan #2:	14p_2.bmp
+  Position:	118	998
+  Size:		160	160
+  Scan #3:	14p_3.bmp
+  Position:	1161	809
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	15.bmp
+Scans total:	6
+  Scan #1:	15_1.bmp
+  Position:	351	590
+  Size:		160	160
+  Scan #2:	15_2.bmp
+  Position:	610	817
+  Size:		160	160
+  Scan #3:	15_3.bmp
+  Position:	1338	565
+  Size:		160	160
+  Scan #4:	15_4.bmp
+  Position:	984	1010
+  Size:		160	160
+  Scan #5:	15_5.bmp
+  Position:	895	941
+  Size:		160	160
+  Scan #6:	15_6.bmp
+  Position:	1357	229
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	15y.bmp
+Scans total:	6
+  Scan #1:	15y_1.bmp
+  Position:	351	590
+  Size:		160	160
+  Scan #2:	15y_2.bmp
+  Position:	610	817
+  Size:		160	160
+  Scan #3:	15y_3.bmp
+  Position:	1338	565
+  Size:		160	160
+  Scan #4:	15y_4.bmp
+  Position:	984	1010
+  Size:		160	160
+  Scan #5:	15y_5.bmp
+  Position:	895	941
+  Size:		160	160
+  Scan #6:	15y_6.bmp
+  Position:	1357	229
+  Size:		160	160
+---------------------------------------------------------------------------
+Dir:	D:\WORK\olympus\DATA\Control\11\
+Image:	15p.bmp
+Scans total:	6
+  Scan #1:	15p_1.bmp
+  Position:	351	590
+  Size:		160	160
+  Scan #2:	15p_2.bmp
+  Position:	610	817
+  Size:		160	160
+  Scan #3:	15p_3.bmp
+  Position:	1338	565
+  Size:		160	160
+  Scan #4:	15p_4.bmp
+  Position:	984	1010
+  Size:		160	160
+  Scan #5:	15p_5.bmp
+  Position:	895	941
+  Size:		160	160
+  Scan #6:	15p_6.bmp
+  Position:	1357	229
+  Size:		160	160

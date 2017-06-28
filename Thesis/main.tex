@@ -1,0 +1,286 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Masters/Doctoral Thesis 
+% LaTeX Template
+% Version 2.4 (22/11/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Version 2.x major modifications by:
+% Vel (vel@latextemplates.com)
+%
+% This template is based on a template by:
+% Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+%
+% Template license:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+11pt, % The default document font size, options: 10pt, 11pt, 12pt
+oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+english, ukrainian, % ngerman for German
+singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+headsepline, % Uncomment to get a line under the header
+%chapterinoneline, % Uncomment to place the chapter title next to the number on one line
+%consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+]{MastersDoctoralThesis} % The class file specifying the document structure
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T2A, T1]{fontenc} % Output font encoding for international characters
+
+
+\usepackage{palatino} % Use the Palatino font by default
+
+%\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage[backend=bibtex,sorting=none,natbib=true]{biblatex}
+%\usepackage{natbib}
+
+\addbibresource{example.bib} % The filename of the bibliography
+
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{multirow}
+\usepackage{hyperref}
+
+
+%\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+
+
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=2.5cm, % Inner margin
+	outer=2.5cm, % Outer margin
+	bindingoffset=.5cm, % Binding offset
+	top=1.5cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thesistitle{Thesis Title} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\supervisor{Dr. James \textsc{Smith}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\degree{Doctor of Philosophy} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\author{John \textsc{Smith}} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
+
+\subject{Biological Sciences} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+\keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
+\university{\href{http://www.univ.kiev.ua/}{Київський національний університет імені Тараса Шевченка}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\department{\href{http://om.univ.kiev.ua/}{кафедри обчислювальної математики}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{\href{http://researchgroup.university.com}{Research Group Name}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\faculty{\href{http://cyb.univ.kiev.ua/}{факультет комп'ютерних наук та кібернетики}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+}
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+	\centering
+	{\scshape\Large\univname\par}
+	{\scshape\Large\facname\par} 
+	\vspace{3cm}
+	
+	{\Large\bfseries Випускна кваліфікаційна робота бакалавра\par}
+	{\Large на тему:\par}
+	{\LARGE \enquote{Розпізнавання раку молочної залози за допомогою аналізу інтерфазних ядер букального епітелію} \par}
+	\vspace{3cm}
+	
+	\flushright
+	{\large Студента 4 курсу \par}
+	{\large \deptname \par}	
+	{\large \href{tranhavu@knu.ua}{Чан Ха Ву}\par}
+	\vspace{1cm}
+	
+	{\large Науковий керівник \par}
+	{\large професор, доктор фізико-математичних наук\par}
+	{\large \href{dokmed5@gmail.com}{Клюшин Дмитро Анатолійович}\par}
+	\vspace{2cm}
+	
+	\flushleft	
+	{\large Робота заслухана на засіданні кафедри обчислювальної математики та рекомендована до захисту в ДЕК, протокол № 11 від 18 травня 2017 р.\par}
+	\vspace{1cm}
+	{\large Завідувач кафедри обчислювальної математики \hfill проф. Ляшко С.І.\par}
+	\vspace{1cm}
+	
+	\centering
+	\vfill
+	{\large Київ}
+	{\large 2017} 
+\end{titlepage}
+
+
+% Ukrainization and some other customizations
+\newenvironment{megaalgorithm}[1][htb]
+{\renewcommand{\algorithmcfname}{Алгоритм}% Update algorithm name
+	\begin{algorithm}[#1]%
+	}{\end{algorithm}}
+
+\renewcommand{\contentsname}{Зміcт}
+\renewcommand{\figurename}{Мал.}
+\renewcommand{\refname}{Список літератури}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Теорема}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{plain}
+\newtheorem{defn}{Означення}
+\newtheorem{conj}{Припущення}
+\newtheorem{exmp}{Example}
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+
+У зв'язку зі стрімким зростанням кількості випадків захворювань раком молочної залози, проблема неінвазивної діагностики цієї хвороби є дуже актуальною. Новітні дослід- ження в області онкології \citep{bib:the_beginning} виявили закономірність, яка полягає в тому, що їснує зв'язок між змінами у інтерфазному ядрі букального епітелію та розвитком злоякісної або доброякісної пухлини (раком молочної залози та фіброаденоматозом відповідно). В роботі досліджується цей зв'язок за допомогою технік комп'ютерного зору, фрактальної геометрії та машинного навчання.
+
+Ця робота складається з трьох частин. У першій частині пропонується алгоритм сегмен- тації інтерфазних ядер букального епітелію на зображенні. У другій частині використо- вується фрактальний аналіз інтерфазних ядер букального епітелію, щоб відрізнити здо- рових пацієнтів від хворих раком молочної залози або фіброаденоматозом. У третій частині використовуються методи глибинного навчання для класифікації зразків (зобра- жень) на групи хворих раком молочної залози та хворих фіброаденоматозом.
+
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+\addchaptertocentry{Подяка} % Add the acknowledgements to the table of contents
+
+\begin{center}{\huge\textit{Подяки}\par}\end{center}
+%The acknowledgments and the people to thank go here, don't forget to include your project advisor\ldots
+
+Хочу виразити щиру подяку своєму науковому керівнику, професору та доктору ф-м наук Клюшину Дмитрові Анатолійовичу, хто надав мені можливість займатися цим неймовірно цікавим дослідженням.
+
+Моїй матері, яка успішно переборола рак молочної залози у 2011-му році та завжди мене підтримувала в навчанні.
+
+Та Анні Разумовій, що допомогла мені в оформленні тексту цієї роботи.
+
+\end{acknowledgements}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the main table of contents
+
+%\listoffigures % Prints the list of figures
+
+%\listoftables % Prints the list of tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+
+%\textbf{LAH} & \textbf{L}ist %\textbf{A}bbreviations \textbf{H}ere\\
+%\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
+
+%\end{abbreviations}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+%\begin{symbols}{lll} % Include a list of Symbols (a three column table)
+
+%$a$ & distance & \si{\meter} \\
+%$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
+%Symbol & Name & Unit \\
+
+%\addlinespace % Gap to separate the Roman symbols from the Greek
+
+%$\omega$ & angular frequency & \si{\radian} \\
+
+%\end{symbols}
+
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\include{Chapters/Chapter1}
+\include{Chapters/Chapter2}
+%\include{Chapters/Chapter25}
+\include{Chapters/Chapter3}
+\include{Chapters/Chapter4} 
+\include{Chapters/Chapter5} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\include{Appendices/AppendixA}
+%\include{Appendices/AppendixB}
+%\include{Appendices/AppendixC}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\printbibliography[heading=bibintoc]
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}  

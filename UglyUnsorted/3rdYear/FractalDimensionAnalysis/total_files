@@ -1,0 +1,83 @@
+#!/bin/bash
+values=(
+	"patients/cancer/short"
+	"patients/control/short"
+	"patients/FAM/short"
+	"patients/FAM_NEW/short"
+)
+
+dispertions=(
+	"patients/cancer/dispertion"
+	"patients/control/dispertion"
+	"patients/FAM/dispertion"
+	"patients/FAM_NEW/dispertion"
+)
+
+function process(){
+	codename=$2
+	base_dir=$1
+
+	rm "$base_dir/total/${codename}.total" &> /dev/null
+
+	matching_regex="$base_dir/+([0-9])_$codename"	
+	echo $matching_regex
+	for file in $base_dir/*
+	do
+		if [[ $file == $matching_regex ]]; then
+			cat $file >> $base_dir/total/${codename}.total
+		fi
+	done
+}
+
+for i in "${values[@]}"
+do	
+	rm -r "$i/total"
+	mkdir "$i/total"
+#	if [ ! -d "$i/total" ]; then
+#		mkdir -p "$i/total"
+#	fi
+
+	process $i "red"
+	process $i "green"
+	process $i "blue"
+	process $i "gray"
+	./bin/draw_histogram "$i/total/red.total" "$i/total/green.total" "$i/total/blue.total" "$i/total/gray.total" "$i/total/rgb.bmp" "1.0" "2.0" "6"
+
+	process $i "red_yellow"
+	process $i "green_yellow"
+	process $i "blue_yellow"
+	process $i "gray_yellow"
+	./bin/draw_histogram "$i/total/red_yellow.total" "$i/total/green_yellow.total" "$i/total/blue_yellow.total" "$i/total/gray_yellow.total" "$i/total/rgb_y.bmp" "1.0" "2.0" "6"
+
+	process $i "red_purple"	
+	process $i "green_purple"
+	process $i "blue_purple"
+	process $i "gray_purple"
+	r=$(./bin/draw_histogram "$i/total/red_purple.total" "$i/total/green_purple.total" "$i/total/blue_purple.total" "$i/total/gray_purple.total" "$i/total/rgb_p.bmp" 1.0 2.0 6)
+
+done
+
+for i in "${dispertions[@]}"
+do
+	rm -r "$i/total"
+	mkdir "$i/total"
+	if [ ! -d "$i/total" ]; then
+		mkdir -p "$i/total"
+	fi
+
+	process $i "red_blue" 
+	process $i "red_green"
+	process $i "blue_green"
+	./bin/draw_histogram "$i/total/red_blue.total" "$i/total/red_green.total" "$i/total/blue_green.total" "$i/total/blue_green.total" "$i/total/disp.bmp" "-0.5" "0.5" "6"
+
+	process $i "red_yellow_blue_yellow"
+	process $i "red_yellow_green_yellow"
+	process $i "blue_yellow_green_yellow"
+	./bin/draw_histogram "$i/total/red_yellow_blue_yellow.total" "$i/total/red_yellow_green_yellow.total" "$i/total/blue_yellow_green_yellow.total" "$i/total/blue_yellow_green_yellow.total" "$i/total/disp_y.bmp" "-0.5" "0.5" "6"
+
+	process $i "red_purple_blue_purple"
+	process $i "red_purple_green_purple"
+	process $i "blue_purple_green_purple"
+	./bin/draw_histogram "$i/total/red_purple_blue_purple.total" "$i/total/red_purple_green_purple.total" "$i/total/blue_purple_green_purple.total" "$i/total/blue_purple_green_purple.total" "$i/total/disp_p.bmp" "-0.5" "0.5" "6"
+
+done
